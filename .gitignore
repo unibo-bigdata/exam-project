@@ -1,9 +1,9 @@
 .idea/
-.aux
-.log
-.out
-.synctex.gz
-.toc
+report/report.aux
+report/report.log
+report/report.out
+report/report.synctex.gz
+report/report.toc
 .ini
 
 # Created by https://www.gitignore.io/api/java,linux,macos,gradle,windows,eclipse,intellij
