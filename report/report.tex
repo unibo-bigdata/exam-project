@@ -22,16 +22,18 @@
 
 \section{Teachers' notes}
 
-The goal of the project is to assess the students' skills in writing jobs of low/medium complexity and to correctly reason about the jobs' performances. The projects must be agreed with the teachers (do not start without explicit consent) and it consists of:
+The goal of the project is to assess the students' skills in writing jobs of low/medium complexity and to correctly reason about the jobs' performances. The projects must be agreed with the teachers (do not start without explicit consent) and require to:
 
 \begin{itemize}
-\item finding a complex-enough dataset: about 1GB, possibly consisting of more tables;
-\item loading the dataset on HDFS/Hive;
-\item implement an analytical job in both MapReduce and Spark;
-\item writing a short report to describe it.
+\item find a complex-enough dataset: at least 1GB, possibly consisting of more tables;
+\item load the dataset on HDFS/Hive;
+\item implement an analytical job in both MapReduce and Spark (minimum complexity of two shuffle operations);
+\item carry out an evaluation of performances and optimize the job accordingly;
+\item display results on Tableau (or similar visual tools);
+\item writing a short report to describe the project.
 \end{itemize}
 
-To deliver the project, each group must {\bf send by email to both teacher the link to their repository}. The repository must:
+To deliver the project, each group must {\bf send by email to both teachers the link to their repository}. The repository must:
 \begin{itemize}
 \item be created from the individual assignment available on the Github classroom;
 \item contain a {\sf report} folder with the PDF of the final report (based on this template). The report can be written in either Italian/English and Latex/Word at your discretion. Be concise and go straight to the point: an excessively verbose report is a waste of time for you and for the teachers;
@@ -69,25 +71,25 @@ Please provide:
 
 \subsubsection{File description}
 
-For each file, briefly indicated the available data and the fields used for the analyses; examples are welcome.
+For each file, briefly indicate the available data and the fields used for the analyses; examples are welcome.
 
 
 \section{Data preparation}
 
 Please provide:
 \begin{itemize}
-\item The paths to each file on HDFS and/or its corresponding location in Hive (database and table); consider relying on the structured data lake organization.
+\item The paths to each file on HDFS and/or the corresponding location in Hive (database and table).
 \item A subsection with details on the pre-processing of the data (only necessary if the data is dirty and/or it contains a significant amount of useless information).
 \end{itemize}
 
 
-\section{Jobs}
+\section{Query}
 
-One subsection for each job.
+One subsection for each query.
 
-\subsection{Job \#1: short description}
+\subsection{Query \#1: short description}
 
-Provide a brief, general description of the job. Then, one subsubsection for each implementation.
+Provide a brief, general description of the query. Then, one subsection for each implementation.
 
 \subsubsection{MapReduce/Spark implementation}
 
@@ -96,21 +98,21 @@ Please provide:
 \item Input and output files/tables.
 \item Execution time and amount of resources.
 \item Direct links to the application's history on YARN (e.g., \url{http://isi-vclust0.csr.unibo.it:18088/history/application_15...}).
-\item Description of the implementation. A schematic and concise discussion is preferrable to a verbose narrative. Focus on how the data is manipulated in the job (e.g., what do keys and values represent across the different stages, what operations are carried out). 
-\item Performance considerations with respect the (potentially) carried out optimizations, e.g., in terms of:
+\item Description of the implementation. A schematic and concise discussion is preferable to a verbose narrative. Focus on how the data is manipulated in the job (e.g., what do keys and values represent across the different stages, what operations are carried out). 
+\item Performance considerations with respect to the evaluated optimizations, e.g.:
 \begin{itemize}
-\item allocated resources and tasks;
+\item amount of allocated resources and tasks;
 \item enforced partitioning;
 \item data caching;
 \item combiner usage;
 \item broadcast variables usage;
 \item any other kind of optimization.
 \end{itemize}
-\item Short extract of the output and discussion (i.e., whether there is any relevant insight obtained).
+\item Visualization of the output and discussion (i.e., whether there is any relevant insight obtained).
 \end{itemize}
 
 \section{Miscellaneous}
 
-If necessary, feel free to add sections to explain any other relevant information.
+If necessary, feel free to add sections to discuss any other relevant aspect.
 
 \end{document}
