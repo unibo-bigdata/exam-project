@@ -2,11 +2,14 @@
 
 Big Data course (81932), University of Bologna.
 
-Since A.Y. 2021/22, the project must be carried out on your AWS Virtual Lab.
+As of A.Y. 2021/22, the project must be carried out on your AWS Virtual Lab.
 
 - Load the dataset(s) on S3
 - Produce a Report in the form of a Notebook that integrates the Spark jobs
-- To deliver the project, simply notify the teacher, who will then access your Virtual Lab with teacher privileges and check your notebook (make sure that you have >10$ left in your credits)
+- To deliver the project, make sure that you have >10$ left in your credits, then notify the teacher via email and send:
+  - The notebook (with all the cells executed)
+  - The .ppk (or .pem) file used to connect to the cluster via SSH
+  - Any additional material (e.g., Power BI or Tableau file, or pictures used in the notebook)
 
 ## Datasets
 
@@ -26,11 +29,3 @@ Alternative examples:
 - [List 2](https://hadoopilluminated.com/hadoop_illuminated/Public_Bigdata_Sets.html)
 - [BigDataBench (datasets + generator)](https://www.benchcouncil.org/BigDataBench/download.html#DownloadGenerator)
 - [Other benchmarks](https://www.predictiveanalyticstoday.com/bigdata-benchmark-suites/)
-
-## Material in this repo
-
-This repository was used as a template for exam project delivery until A.Y. 2020/21. It contains:
-
-- The basic structure for MapReduce and Spark jobs
-- Guidelines for complex MaprReduce jobs
-- The template for the report
